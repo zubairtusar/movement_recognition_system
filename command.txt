@@ -1,0 +1,21 @@
+#to copy files through ssh
+From pi to pc: "pscp [your RPi username]@[RPi ip address]:/home/pi/main.py C:\Users\User\Desktop"
+From pc to pi: "pscp -p 22 C:\Users\User\Desktop\maindfv4.py [your RPi username]@[RPi ip address]:/home/pi"
+
+
+#rpi credentials
+ip address for raspberry: [RPi ip address]
+
+#default RPi login credentials
+login: pi
+password: raspberry
+
+
+
+#python version restores
+C:\Users\User\AppData\Local\Programs\Python\Python39\Scripts\
+C:\Users\User\AppData\Local\Programs\Python\Python39\
+
+#conda env with 32 bit python
+set CONDA_FORCE_32BIT=1
+activate py27_32
